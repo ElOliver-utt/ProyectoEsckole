@@ -1,4 +1,4 @@
-package com.example.proyectoesckole;
+package com.example.proyectoesckole.cFragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,16 +8,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.proyectoesckole.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link notificaciones.OnFragmentInteractionListener} interface
+ * {@link alumnos.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link notificaciones#newInstance} factory method to
+ * Use the {@link alumnos#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class notificaciones extends Fragment {
+public class alumnos extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -29,7 +31,7 @@ public class notificaciones extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public notificaciones() {
+    public alumnos() {
         // Required empty public constructor
     }
 
@@ -39,11 +41,11 @@ public class notificaciones extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment notificaciones.
+     * @return A new instance of fragment alumnos.
      */
     // TODO: Rename and change types and number of parameters
-    public static notificaciones newInstance(String param1, String param2) {
-        notificaciones fragment = new notificaciones();
+    public static alumnos newInstance(String param1, String param2) {
+        alumnos fragment = new alumnos();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,7 +66,7 @@ public class notificaciones extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_notificaciones, container, false);
+        return inflater.inflate(R.layout.fragment_alumnos, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -99,7 +101,7 @@ public class notificaciones extends Fragment {
      * <p>
      * See the Android Training lesson <a href=
      * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
+     * >Communicating with Other fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name

@@ -26,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_notifications:
                     mTextMessage.setText(R.string.title_notifications);
                     return true;
+
+                case R.id.navigation_contact:
+                    mTextMessage.setText("Contacto");
+                    return true;
             }
             return false;
         }
@@ -40,5 +44,4 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
-
 }
