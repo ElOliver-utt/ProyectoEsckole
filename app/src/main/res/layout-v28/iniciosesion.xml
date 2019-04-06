@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/campo"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <EditText
@@ -41,16 +42,16 @@
 
     <Button
         android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="300dp"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/password"
         android:layout_marginBottom="365dp"
-        android:background="@drawable/boton"
         android:backgroundTintMode="src_in"
         android:text="INICIAR SESIÓN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
