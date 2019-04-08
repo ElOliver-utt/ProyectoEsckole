@@ -5,7 +5,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="@drawable/wall2">
 
     <ImageView
         android:id="@+id/imageView"
@@ -22,7 +22,7 @@
         android:layout_marginBottom="80dp"
         android:text="BIENVENIDO"
         android:textColor="@android:color/background_dark"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:fontFamily="sans-serif"
         app:layout_constraintBottom_toBottomOf="parent"
